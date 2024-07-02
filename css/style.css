@@ -1,0 +1,801 @@
+/* global setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 5px 10px;
+    border: 1px solid #31353F;
+    color: #E4E4E4 !important;
+    text-align: center;
+    background: transparent;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+
+/* sidebar setting */
+.sidebar {
+    background-color: #1B2028;
+    color: white;
+    padding: 30px;
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+}
+
+.sidebar .logo {
+    margin-bottom: 50px;
+}
+
+.sidebar .logo img {
+    width: 34px;
+    height: 20px;
+}
+
+.sidebar .logo span {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+
+}
+
+.sidebar nav ul .bottom {
+    position: absolute;
+    bottom: 20px;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+    margin-bottom: 32px;
+}
+
+.sidebar nav ul li a {
+    color: #9E9E9E;
+    text-decoration: none;
+
+}
+
+.sidebar nav ul li a.active {
+    display: inline-block;
+    padding: 13px;
+    background-color: #3A6FF8;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+
+.sidebar nav ul li a .element {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.sidebar nav ul li a .element span {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+
+
+/*main setting  */
+.main-content {
+    background-color: #31353F;
+    padding: 20px;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+}
+
+
+header .search {
+    position: relative;
+}
+
+header .search input {
+    background-color: #1B2028;
+    width: 500px;
+    border-radius: 8px;
+    padding: 15px 20px;
+    border: none;
+}
+
+header .search i {
+    color: #9E9E9E;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 9px;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header .right .icon {
+    background-color: #1B2028;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+header .right .person {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* top-chart */
+.body-main {
+    margin-top: 30px;
+}
+
+.body-main .top-chart {
+    display: flex;
+    gap: 20px;
+
+}
+
+.body-main .top-chart .crypto-card {
+    background-color: #1f2937;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.body-main .top-chart .crypto-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-main .top-chart .crypto-header .icon {
+    background-color: #31353F;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.body-main .top-chart .crypto-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.body-main .top-chart .crypto-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.body-main .top-chart .crypto-info h2 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.body-main .top-chart .crypto-info p {
+    margin: 0;
+    opacity: 60%;
+}
+
+.body-main .top-chart .crypto-status {
+    color: #1ECB4F;
+}
+
+.body-main .top-chart .crypto-body {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.body-main .top-chart .crypto-price {
+    margin: 20px 0;
+}
+
+.body-main .top-chart .crypto-price h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 2%;
+    margin-bottom: 22px;
+}
+
+.body-main .top-chart .price-change {
+    color: #1ECB4F;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2%;
+}
+
+.body-main .top-chart .crypto-chart {
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.body-main .top-chart .crypto-chart #cryptoChart {
+    width: 150px !important;
+}
+
+/* statics */
+.body-main .statics {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+
+
+.body-main .statics .left .portfolio-card {
+    background-color: #1B2028;
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.portfolio-card h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.body-main .statics .left .portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.body-main .statics .left .portfolio-item .portfolio-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.body-main .statics .left .icon {
+    background-color: #31353F;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.body-main .statics .left .crypto-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.body-main .statics .left .crypto-details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.body-main .statics .left .crypto-details h2 {
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.body-main .statics .left .crypto-details p {
+    margin: 0;
+    color: #9ca3af;
+}
+
+.body-main .statics .left .crypto-change {
+    width: 80px;
+    margin-bottom: 4px;
+    text-align: right;
+}
+
+.body-main .statics .left .positive {
+    color: #10b981;
+}
+
+.body-main .statics .left .negative {
+    color: #ef4444;
+}
+
+.body-main .statics .left .crypto-amount {
+    color: #fff;
+}
+
+/* creidet card setting */
+.body-main .statics .left .credit-card {
+    background-color: #1f72e2;
+    width: 320px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.body-main .statics .left .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-main .statics .left .card-type {
+    font-size: 1.2em;
+}
+
+.body-main .statics .left .chip {
+    width: 40px;
+    height: 30px;
+    background-color: gold;
+    border-radius: 5px;
+}
+
+.body-main .statics .left .card-number {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+
+.body-main .statics .left .card-holder {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.body-main .statics .left .card-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* charts card setting  */
+body-main .statics .right {
+    flex-grow: 3;
+}
+
+.body-main .statics .right .chart-card {
+    background-color: #1B2028;
+    border-radius: 15px;
+    padding: 20px;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.body-main .statics .right .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.body-main .statics .right .chart-options {
+    display: flex;
+    align-items: center;
+}
+
+.body-main .statics .right .chart-options select,
+.body-main .statics .right .chart-options p {
+    margin: 0 10px;
+}
+
+.body-main .statics .right .time-options button {
+    background: #2c3e50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.body-main .statics .right .chart-actions button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* live-market  setting*/
+.body-main .statics .right .live-market {
+    background: #1B2028;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.body-main .statics .right .live-market .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-main .statics .right .live-market .top .title {
+    color: #fff !important;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.body-main .statics .right .live-market .table-container {
+    margin-top: 30px;
+    color: #9E9E9E;
+}
+
+.body-main .statics .right .live-market table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.body-main .statics .right .live-market th,
+.body-main .statics .right .live-market td {
+    padding: 15px;
+    text-align: left;
+}
+
+.body-main .statics .right .live-market th {
+    font-size: 1.2em;
+}
+
+/* Media Queries */
+
+
+@media (max-width: 1200px) {
+    .dashboard-container {
+        grid-template-columns: 200px 1fr;
+    }
+
+    header .search input {
+        width: 400px;
+    }
+
+    .body-main .top-chart .crypto-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    header .search input {
+        width: 300px;
+    }
+
+    .body-main .top-chart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body-main .top-chart .crypto-card {
+        width: 90%;
+    }
+
+    .body-main .statics {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    header .search input {
+        width: 100%;
+    }
+
+    .body-main .top-chart .crypto-card {
+        width: 100%;
+    }
+
+    .body-main .statics .left .portfolio-card,
+    .body-main .statics .left .credit-card {
+        width: 100%;
+    }
+
+    .body-main .statics .right .chart-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        padding: 20px;
+    }
+
+    .body-main .top-chart .crypto-card {
+        padding: 15px;
+    }
+
+    .body-main .statics .right .live-market .table-container {
+        overflow-x: auto;
+    }
+}
+
+
+/* login page setting */
+
+.container-login {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.login-form {
+    padding: 150px;
+    width: 50%;
+    text-align: center;
+}
+
+.login-form h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.login-form p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.login-form .input-group {
+    margin-bottom: 15px;
+}
+
+.login-form .input-group input {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #ccc;
+    background: #F0EDFF;
+    border-radius: 16px;
+}
+
+.login-form .submit {
+    display: inline-block;
+    padding: 15px 30px;
+    background: rgb(80, 56, 237);
+    background: linear-gradient(#9181F4 0%, #5038ED 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-form .login-with-others {
+    margin-top: 20px;
+}
+
+.login-form .login-with-others p {
+    text-align: center;
+    color: gray;
+}
+
+.login-form .login-with-others button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form .google-login,
+.login-form .facebook-login {
+
+    display: flex;
+    align-items: center;
+    border: 1px solid #F0EDFF !important;
+    background: transparent;
+    color: #1C1C1C;
+    gap: 6px;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+
+.container-login .side-message {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .side-message .box {
+    background: #ffffff6f;
+    width: 50%;
+    color: white;
+    height: 60%;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.container-login .side-message .box .women {
+    position: absolute;
+    bottom: 0;
+    right: -110px;
+    height: 464px;
+    width: 785px;
+}
+
+.container-login .side-message .box .Group {
+    position: absolute;
+    bottom: 70px;
+    left: -40px;
+
+}
+
+.container-login .side-message .box p {
+    font-size: 25px;
+    width: 50%;
+    line-height: 46px;
+    font-weight: bold;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1200px) {
+    .container-login {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .login-form,
+    .side-message {
+        width: 100% !important;
+    }
+
+    .login-form {
+        padding: 50px;
+    }
+
+    .side-message .box {
+        width: 80% !important;
+        height: auto;
+    }
+
+    .container-login .side-message .box .women {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-login .side-message .box p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .container-login .side-message .box .Group {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-form {
+        padding: 30px;
+    }
+
+    .login-form h1 {
+        font-size: 25px;
+    }
+
+    .login-form p {
+        font-size: 14px;
+    }
+
+    .login-form .input-group input {
+        padding: 15px;
+    }
+
+    .login-form button {
+        padding: 10px 20px;
+    }
+
+    .login-form .login-with-others button {
+        padding: 8px;
+    }
+
+    .side-message .box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form h1 {
+        font-size: 20px;
+    }
+
+    .login-form p {
+        font-size: 12px;
+    }
+
+    .login-form .input-group input {
+        padding: 12px;
+    }
+
+    .login-form button {
+        padding: 8px 16px;
+    }
+
+    .login-form .login-with-others button {
+        padding: 6px;
+    }
+
+    .side-message .box {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-form h1 {
+        font-size: 18px;
+    }
+
+    .login-form p {
+        font-size: 10px;
+    }
+
+    .login-form .input-group input {
+        padding: 10px;
+    }
+
+    .login-form button {
+        padding: 6px 12px;
+    }
+
+    .login-form .login-with-others button {
+        padding: 4px;
+    }
+
+    .side-message .box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .side-message .box p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .container-login .side-message .box .women {
+        height: 200px;
+    }
+
+    .container-login .side-message .box .Group {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="">
+                    <span>Logoipsm</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#Overview">
+                            <div class="element"><img src="images/Icon/element-3.svg" alt=""><span>Overview</span></div>
+                        </a></li>
+                    <li><a class="" href="#Chart">
+                            <div class="element"><img src="images/Icon/Icon/graph.svg" alt=""><span>Chart</span></div>
+                        </a></li>
+                    <li><a class="" href="#Transactions">
+                            <div class="element"><img src="images/Icon/wallet-2.svg" alt=""><span>Transactions</span>
+                            </div>
+                        </a></li>
+                    <li><a class="" href="#Wallet">
+                            <div class="element"><img src="images/Icon/wallet-minus.svg" alt=""><span>Wallet</span>
+                            </div>
+                        </a></li>
+                    <li><a class="" href="#News">
+                            <div class="element"><img src="images/Icon/message-text.svg" alt=""><span>News</span></div>
+                        </a></li>
+                    <li><a class="" href="#Mail">
+                            <div class="element"><img src="images/Icon/sms.svg" alt=""><span>Mail Box</span></div>
+                        </a></li>
+                    <div class="bottom">
+                        <li><a class="" href="#Mail">
+                                <div class="element"><img src="images/Icon/setting-2.svg" alt=""><span>Setting</span>
+                                </div>
+                            </a></li>
+                        <li><a class="" href="login.html">
+                                <div class="element"><img src="images/Icon/logout.svg" alt=""><span>Logout</span></div>
+                            </a></li>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <div class="search">
+                    <input type="search" name="" placeholder="...Search.." id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="right">
+                    <div class="icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="person">
+                        <div class="icon" style="background-color: #9E9E9E;"><img src="images/Icon/sms.svg" alt="">
+                        </div>
+                        <div class="dropdown">
+                            <span>Courtney Henry</span>
+                            <span class="arrow-down"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00016 5.91001C4.81016 5.91001 4.62016 5.84001 4.47016 5.69001L0.940156 2.16001C0.650156 1.87001 0.650156 1.39001 0.940156 1.10001C1.23016 0.810007 1.71016 0.810007 2.00016 1.10001L5.00016 4.10001L8.00016 1.10001C8.29016 0.810007 8.77016 0.810007 9.06016 1.10001C9.35016 1.39001 9.35016 1.87001 9.06016 2.16001L5.53016 5.69001C5.38016 5.84001 5.19016 5.91001 5.00016 5.91001Z"
+                                        fill="#9E9E9E" />
+                                </svg></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="body-main">
+                <div class="top-chart">
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="icon">
+                                <img src="images/Icon/Icon/bitcoin-(btc).svg" alt="Bitcoin Logo" class="crypto-logo">
+                            </div>
+                            <div class="crypto-info">
+                                <h2>Bitcoin</h2>
+                                <p>BTC</p>
+                            </div>
+                            <div class="crypto-status">
+                                <span class="status-arrow">▲</span>
+                            </div>
+                        </div>
+                        <div class="crypto-body">
+
+                            <div class="crypto-price">
+                                <h1>$52,291</h1>
+                                <p class="price-change">+0.25%</p>
+                            </div>
+                            <div class="crypto-chart">
+                                <img src="" alt="Chart Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="icon">
+                                <img src="images/Icon/Icon/litecoin(ltc).svg" alt="litecoin Logo" class="crypto-logo">
+                            </div>
+                            <div class="crypto-info">
+                                <h2>Litecoin</h2>
+                                <p>ITC</p>
+                            </div>
+                            <div class="crypto-status">
+                                <span class="status-arrow">▲</span>
+                            </div>
+                        </div>
+                        <div class="crypto-body">
+                            <div class="crypto-price">
+                                <h1>$8,291</h1>
+                                <p class="price-change">+0.25%</p>
+                            </div>
+                            <div class="crypto-chart">
+                                <img src="" alt="Chart Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="icon">
+                                <img src="images/Icon/Icon/ethereum-(eth).svg" alt="Ethereum Logo" class="crypto-logo">
+                            </div>
+                            <div class="crypto-info">
+                                <h2>Ethereum</h2>
+                                <p>ETH</p>
+                            </div>
+                            <div class="crypto-status">
+                                <span class="status-arrow">▲</span>
+                            </div>
+                        </div>
+                        <div class="crypto-body">
+
+                            <div class="crypto-price">
+                                <h1>$28,291</h1>
+                                <p class="price-change">+0.25%</p>
+                            </div>
+                            <div class="crypto-chart">
+                                <img src="" alt="Chart Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="icon">
+                                <img src="images/Icon/Icon/solana-(sol).svg" alt="Solana Logo" class="crypto-logo">
+                            </div>
+                            <div class="crypto-info">
+                                <h2>Solana</h2>
+                                <p>SOL</p>
+                            </div>
+                            <div class="crypto-status">
+                                <span class="status-arrow">▲</span>
+                            </div>
+                        </div>
+                        <div class="crypto-body">
+
+                            <div class="crypto-price">
+                                <h1>$14,291</h1>
+                                <p class="price-change" style="color:#F46D22">-0.25%</p>
+                            </div>
+                            <div class="crypto-chart">
+                                <canvas id="cryptoChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statics">
+                    <div class="left">
+                        <div class="credit-card">
+                            <div class="card-top">
+                                <p class="card-type">Credit Card</p>
+                                <div class="chip"></div>
+                            </div>
+                            <div class="card-number">3475 7381 3759 4512</div>
+                            <div class="card-holder">DARRELL STEWARD</div>
+                            <div class="card-logo">VIZA</div>
+                        </div>
+                        <div class="portfolio-card">
+                            <h1>My Portfolio</h1>
+                            <div class="portfolio-item">
+                                <div class="portfolio-left">
+                                    <div class="icon">
+                                        <img src="images/Icon/Icon/ethereum-(eth).svg" alt="Ethereum"
+                                            class="crypto-logo">
+                                    </div>
+                                    <div class="crypto-details">
+                                        <h2>Ethereum</h2>
+                                        <p>$3,245.03</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-right">
+                                    <div class="crypto-change negative">
+                                        -13.40%
+                                    </div>
+                                    <div class="crypto-amount">
+                                        0.12543 ETH
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-left">
+                                    <div class="icon">
+                                        <img src="images/Icon/Icon/bitcoin-(btc).svg" alt="bitcoin" class="crypto-logo">
+                                    </div>
+                                    <div class="crypto-details">
+                                        <h2>Bitcoin</h2>
+                                        <p>$3,245.03</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-right">
+                                    <div class="crypto-change negative">
+                                        -13.40%
+                                    </div>
+                                    <div class="crypto-amount">
+                                        0.12543 btc
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-left">
+                                    <div class="icon">
+                                        <img src="images/Icon/Icon/litecoin(ltc).svg" alt="litecoin"
+                                            class="crypto-logo">
+                                    </div>
+                                    <div class="crypto-details">
+                                        <h2>Litecoin</h2>
+                                        <p>$3,245.03</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-right">
+                                    <div class="crypto-change negative">
+                                        -13.40%
+                                    </div>
+                                    <div class="crypto-amount">
+                                        0.12543 ltc
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-left">
+                                    <div class="icon">
+                                        <img src="images/Icon/Icon/solana-(sol).svg" alt="solana" class="crypto-logo">
+                                    </div>
+                                    <div class="crypto-details">
+                                        <h2>solana</h2>
+                                        <p>$3,245.03</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-right">
+                                    <div class="crypto-change negative">
+                                        -13.40%
+                                    </div>
+                                    <div class="crypto-amount">
+                                        0.12543 sol
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-left">
+                                    <div class="icon">
+                                        <img src="images/Icon/Icon/binance-coin-(bnb).svg" alt="binance-coin"
+                                            class="crypto-logo">
+                                    </div>
+                                    <div class="crypto-details">
+                                        <h2>binance-coin</h2>
+                                        <p>$3,245.03</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-right">
+                                    <div class="crypto-change negative">
+                                        -13.40%
+                                    </div>
+                                    <div class="crypto-amount">
+                                        0.12543 bnb
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h1>Chart</h1>
+                                <div class="chart-options">
+                                    <div style="display: flex;flex-direction: column; gap: 30px;align-items: end;">
+                                        <div class="chart-actions">
+                                            <button class="settings">⚙️</button>
+                                            <button class="currency">💲 USD</button>
+                                        </div>
+                                        <div class="time-options">
+                                            <button>1h</button>
+                                            <button>3h</button>
+                                            <button>1d</button>
+                                            <button>1w</button>
+                                            <button>1m</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="live-market">
+                            <div class="top">
+                                <h3 class="title">
+                                    Live Market
+                                </h3>
+
+                                <button class="btn">View More</button>
+                            </div>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Coin</th>
+                                            <th>Change</th>
+                                            <th>Market Cap</th>
+                                            <th>24h Volume</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bitcoin</td>
+                                            <td>+12.00%</td>
+                                            <td>$3.560M</td>
+                                            <td>$65.20M</td>
+                                            <td>$48,032.32</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const ctx1 = document.getElementById('cryptoChart').getContext('2d');
+            const cryptoChart1 = new Chart(ctx1, {
+
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                    datasets: [{
+                        label: 'Bitcoin Price',
+                        data: [30000, 35000, 32000, 37000, 39000, 42000, 52000],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        fill: false,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            display: false // Hide X axis grid lines and labels
+                        },
+                        y: {
+                            display: false // Hide Y axis grid lines and labels
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false // Hide legend
+                        }
+                    },
+                    elements: {
+                        point: {
+                            radius: 0 // Hide data points
+                        }
+                    }
+                }
+            });
+        });
+        const ctx2 = document.getElementById('myChart').getContext('2d');
+        const myChart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['19:00', '19:10', '19:20', '19:30', '19:40', '19:50'],
+                datasets: [{
+                    label: 'Bitcoin/BTC',
+                    data: [40, 32, 45, 30, 20, 25],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: false,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
